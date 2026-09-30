@@ -1,20 +1,23 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50103 "DEF Work Order Card"
+page 50103 "DEF FS Mobile Order Card"
 {
     Caption = 'Field Service Work Order';
-    PageType = Card;
-    SourceTable = "DEF Work Order";
+    PageType = Document;
+    SourceTable = "DEF FS Work Order Header";
     ApplicationArea = All;
+    Editable = true;
+    InsertAllowed = false;
+    DeleteAllowed = false;
     UsageCategory = Documents;
 
     layout
     {
         area(Content)
         {
-            group(General)
+            group(WorkOrder)
             {
-                Caption = 'General';
+                Caption = 'Work Order';
 
                 field("No."; Rec."No.")
                 {
@@ -26,52 +29,102 @@ page 50103 "DEF Work Order Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies a short summary of the requested field service work.';
                 }
+                field("Customer Name"; Rec."Customer Name")
+                {
+                    Caption = 'Customer';
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer associated with this work order.';
+                }
+                field(Priority; Rec.Priority)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the priority of this work order.';
+                }
                 field(Status; Rec.Status)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the current processing status of this work order.';
                 }
-                field("Work Date"; Rec."Work Date")
+                field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the date planned for the service work.';
+                    ToolTip = 'Specifies the service address for this work order.';
                 }
             }
-            group(Customer)
+            part(Lines; "DEF FS Line Subform")
             {
-                Caption = 'Customer';
-
-                field("Customer No."; Rec."Customer No.")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the customer responsible for this work order.';
-                }
-                field("Customer Name"; Rec."Customer Name")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                    ToolTip = 'Specifies the customer name associated with this work order.';
-                }
+                ApplicationArea = All;
+                Editable = true;
+                SubPageLink = "Document No." = field("No.");
             }
-            group(ServiceLocation)
-            {
-                Caption = 'Service Location';
+        }
+    }
 
-                field("Service Address"; Rec."Service Address")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the street address where the service work is performed.';
-                }
-                field("Service City"; Rec."Service City")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the city where the service work is performed.';
-                }
-                field("Service Post Code"; Rec."Service Post Code")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the postal code for the service location.';
-                }
+    actions
+    {
+        area(Promoted)
+        {
+            actionref(StartPromoted; Start)
+            {
+            }
+            actionref(StopPromoted; Stop)
+            {
+            }
+            actionref(StartWorkPromoted; StartWork)
+            {
+            }
+            actionref(FinishOrderPromoted; FinishOrder)
+            {
+            }
+        }
+        area(Processing)
+        {
+            action(Start)
+            {
+                Caption = 'Start';
+                ApplicationArea = All;
+                Image = Navigate;
+                ToolTip = 'Starts this work order.';
+
+                trigger OnAction()
+                begin
+                    Message('Action Start triggered');
+                end;
+            }
+            action(Stop)
+            {
+                Caption = 'Stop';
+                ApplicationArea = All;
+                Image = Pause;
+                ToolTip = 'Stops or pauses this work order.';
+
+                trigger OnAction()
+                begin
+                    Message('Action Stop triggered');
+                end;
+            }
+            action(StartWork)
+            {
+                Caption = 'Start Work';
+                ApplicationArea = All;
+                ToolTip = 'Starts the work for this order.';
+
+                trigger OnAction()
+                begin
+                    Message('Action Start Work triggered');
+                end;
+            }
+            action(FinishOrder)
+            {
+                Caption = 'Finish Order';
+                ApplicationArea = All;
+                Image = Approve;
+                ToolTip = 'Finishes this work order.';
+
+                trigger OnAction()
+                begin
+                    Message('Action Finish Order triggered');
+                end;
             }
         }
     }

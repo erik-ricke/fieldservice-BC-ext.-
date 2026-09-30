@@ -1,27 +1,28 @@
 namespace DEF.FieldService.WorkOrders;
 
-enum 50101 "DEF Work Order Status"
+enum 50101 "DEF FS Order Status"
 {
+    Caption = 'Field Service Order Status';
     Extensible = true;
 
     value(0; Open)
     {
         Caption = 'Open';
     }
-    value(1; Scheduled)
+    value(1; Traveling)
     {
-        Caption = 'Scheduled';
+        Caption = 'Traveling';
     }
     value(2; "In Progress")
     {
         Caption = 'In Progress';
     }
-    value(3; Completed)
+    value(3; Paused)
     {
-        Caption = 'Completed';
+        Caption = 'Paused';
     }
-    value(4; Canceled)
+    value(4; Done)
     {
-        Caption = 'Canceled';
+        Caption = 'Done';
     }
 }
