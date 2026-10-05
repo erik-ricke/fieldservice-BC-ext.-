@@ -48,5 +48,29 @@ table 50100 "DEF FS Work Order Header"
         {
             Clustered = true;
         }
+        key(PriorityStatus; Priority, Status)
+        {
+        }
     }
+
+    trigger OnInsert()
+    var
+        WorkOrderHeader: Record "DEF FS Work Order Header";
+        HighestNo: Integer;
+        Candidate: Integer;
+    begin
+        if "No." <> '' then
+            exit;
+
+        HighestNo := 0;
+        if WorkOrderHeader.FindSet() then
+            repeat
+                if CopyStr(WorkOrderHeader."No.", 1, 3) = 'WO-' then
+                    if Evaluate(Candidate, CopyStr(WorkOrderHeader."No.", 4)) then
+                        if Candidate > HighestNo then
+                            HighestNo := Candidate;
+            until WorkOrderHeader.Next() = 0;
+
+        "No." := 'WO-' + Format(HighestNo + 1);
+    end;
 }

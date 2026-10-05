@@ -6,7 +6,7 @@ page 50103 "DEF FS Mobile Order Card"
     PageType = Document;
     SourceTable = "DEF FS Work Order Header";
     ApplicationArea = All;
-    Editable = true;
+    Editable = false;
     InsertAllowed = false;
     DeleteAllowed = false;
     UsageCategory = Documents;
@@ -54,7 +54,7 @@ page 50103 "DEF FS Mobile Order Card"
             part(Lines; "DEF FS Line Subform")
             {
                 ApplicationArea = All;
-                Editable = true;
+                Editable = false;
                 SubPageLink = "Document No." = field("No.");
             }
         }
@@ -64,22 +64,40 @@ page 50103 "DEF FS Mobile Order Card"
     {
         area(Promoted)
         {
-            actionref(StartPromoted; Start)
+            actionref(TravelingPromoted; Traveling)
             {
             }
-            actionref(StopPromoted; Stop)
+            actionref(StartPromoted; StartJob)
             {
             }
-            actionref(StartWorkPromoted; StartWork)
+            actionref(StopPromoted; "Pause/Stop")
             {
             }
-            actionref(FinishOrderPromoted; FinishOrder)
+            actionref(AddSparePartPromoted; AddSparePart)
             {
             }
+            actionref(StartWorkPromoted; CompleteJob)
+            {
+            }
+
         }
         area(Processing)
         {
-            action(Start)
+            action(Traveling)
+            {
+                Caption = 'Anfahrt';
+                ApplicationArea = All;
+                Image = MoveUp;
+                ToolTip = 'Marks this work order as currently traveling to the customer.';
+
+                trigger OnAction()
+                begin
+                    Rec.Status := Rec.Status::Traveling;
+                    Rec.Modify();
+                    CurrPage.Update();
+                end;
+            }
+            action(StartJob)
             {
                 Caption = 'Start';
                 ApplicationArea = All;
@@ -88,44 +106,86 @@ page 50103 "DEF FS Mobile Order Card"
 
                 trigger OnAction()
                 begin
-                    Message('Action Start triggered');
+                    Rec.Status := Rec.Status::"In Progress";
+                    Rec.Modify();
+                    CurrPage.Update();
                 end;
             }
-            action(Stop)
+            action("Pause/Stop")
             {
-                Caption = 'Stop';
+                Caption = 'Pause/Stop';
                 ApplicationArea = All;
                 Image = Pause;
                 ToolTip = 'Stops or pauses this work order.';
 
                 trigger OnAction()
                 begin
-                    Message('Action Stop triggered');
+                    Rec.Status := Rec.Status::Paused;
+                    Rec.Modify();
+                    CurrPage.Update();
                 end;
             }
-            action(StartWork)
+            action(AddSparePart)
             {
-                Caption = 'Start Work';
+                Caption = 'Material verbuchen';
                 ApplicationArea = All;
-                ToolTip = 'Starts the work for this order.';
+                Image = Item;
+                ToolTip = 'Öffnet die Auswahl, um ein neues Material oder Teil der Work Order hinzuzufügen.';
 
                 trigger OnAction()
+                var
+                    WorkOrderItemMgt: Codeunit "DEF FS Work Order Item Mgt";
                 begin
-                    Message('Action Start Work triggered');
+                    WorkOrderItemMgt.AddItemToWorkOrder(Rec."No.");
                 end;
             }
-            action(FinishOrder)
+            action(CompleteJob)
             {
-                Caption = 'Finish Order';
+                Caption = 'Complete Job';
                 ApplicationArea = All;
-                Image = Approve;
-                ToolTip = 'Finishes this work order.';
+                ToolTip = 'Completes the work for this order.';
 
                 trigger OnAction()
+                var
+                    JobCompletionDialog: Page "DEF FS Job Completion Dialog";
+                    CompletionChoice: Integer;
+                    FailureNote: Text[250];
                 begin
-                    Message('Action Finish Order triggered');
+                    if JobCompletionDialog.RunModal() <> Action::OK then
+                        exit;
+
+                    CompletionChoice := JobCompletionDialog.GetCompletionChoice();
+                    FailureNote := JobCompletionDialog.GetFailureNote();
+
+                    case CompletionChoice of
+                        4:
+                            begin
+                                Rec.Status := Rec.Status::Done;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde als abgeschlossen markiert.');
+                            end;
+                        5:
+                            begin
+                                if FailureNote.Trim() = '' then
+                                    Error('Bitte eine Notiz für den fehlgeschlagenen Job eingeben.');
+
+                                Rec.Status := Rec.Status::Failed;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde als fehlgeschlagen markiert.\Notiz: %1', FailureNote);
+                            end;
+                        3:
+                            begin
+                                Rec.Status := Rec.Status::Paused;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde pausiert.');
+                            end;
+                    end;
                 end;
             }
+
         }
     }
 }

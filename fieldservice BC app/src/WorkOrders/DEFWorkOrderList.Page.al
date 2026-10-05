@@ -49,10 +49,16 @@ page 50102 "DEF FS Mobile Order List"
         {
             group(Category_Process)
             {
+                actionref(TravelingPromoted; Traveling)
+                {
+                }
                 actionref(StartJobPromoted; StartJob)
                 {
                 }
                 actionref(PauseStopPromoted; PauseStop)
+                {
+                }
+                actionref(AddSparePartPromoted; AddSparePart)
                 {
                 }
                 actionref(CompleteJobPromoted; CompleteJob)
@@ -62,6 +68,21 @@ page 50102 "DEF FS Mobile Order List"
         }
         area(Processing)
         {
+            action(Traveling)
+            {
+                Caption = 'Anfahrt';
+                ApplicationArea = All;
+                Scope = Repeater;
+                Image = MoveUp;
+                ToolTip = 'Marks the job as currently traveling to the customer.';
+
+                trigger OnAction()
+                begin
+                    Rec.Status := Rec.Status::Traveling;
+                    Rec.Modify();
+                    CurrPage.Update();
+                end;
+            }
             action(StartJob)
             {
                 Caption = 'Start Job';
@@ -72,7 +93,9 @@ page 50102 "DEF FS Mobile Order List"
 
                 trigger OnAction()
                 begin
-                    Message('Action Start Job triggered');
+                    Rec.Status := Rec.Status::"In Progress";
+                    Rec.Modify();
+                    CurrPage.Update();
                 end;
             }
             action(PauseStop)
@@ -85,7 +108,9 @@ page 50102 "DEF FS Mobile Order List"
 
                 trigger OnAction()
                 begin
-                    Message('Action Pause/Stopp triggered');
+                    Rec.Status := Rec.Status::Paused;
+                    Rec.Modify();
+                    CurrPage.Update();
                 end;
             }
             action(CompleteJob)
@@ -97,17 +122,52 @@ page 50102 "DEF FS Mobile Order List"
                 ToolTip = 'Completes the selected field service job.';
 
                 trigger OnAction()
+                var
+                    JobCompletionDialog: Page "DEF FS Job Completion Dialog";
+                    CompletionChoice: Integer;
+                    FailureNote: Text[250];
                 begin
-                    Message('Action Job Abschließen triggered');
+                    if JobCompletionDialog.RunModal() <> Action::OK then
+                        exit;
+
+                    CompletionChoice := JobCompletionDialog.GetCompletionChoice();
+                    FailureNote := JobCompletionDialog.GetFailureNote();
+
+                    case CompletionChoice of
+                        4:
+                            begin
+                                Rec.Status := Rec.Status::Done;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde als abgeschlossen markiert.');
+                            end;
+                        5:
+                            begin
+                                if FailureNote.Trim() = '' then
+                                    Error('Bitte eine Notiz für den fehlgeschlagenen Job eingeben.');
+
+                                Rec.Status := Rec.Status::Failed;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde als fehlgeschlagen markiert.\Notiz: %1', FailureNote);
+                            end;
+                        3:
+                            begin
+                                Rec.Status := Rec.Status::Paused;
+                                Rec.Modify();
+                                CurrPage.Update();
+                                Message('Job wurde pausiert.');
+                            end;
+                    end;
                 end;
             }
             action(AddSparePart)
             {
-                Caption = 'Add Spare Part';
+                Caption = 'Material verbuchen';
                 ApplicationArea = All;
                 Scope = Repeater;
                 Image = Item;
-                ToolTip = 'Opens item selection to add a spare part to this work order.';
+                ToolTip = 'Öffnet die Auswahl, um ein neues Material oder Teil der Work Order hinzuzufügen.';
 
                 trigger OnAction()
                 var
@@ -118,4 +178,10 @@ page 50102 "DEF FS Mobile Order List"
             }
         }
     }
+
+    trigger OnOpenPage()
+    begin
+        Rec.SetCurrentKey(Priority, Status);
+        Rec.Ascending(false);
+    end;
 }

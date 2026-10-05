@@ -97,6 +97,11 @@ page 50113 "DEF FS Demo Setup"
                 var
                     DemoDataMgt: Codeunit "DEF FS Demo Data Mgt";
                 begin
+                    if Rec.IsEmpty() then begin
+                        DemoDataMgt.EnsureDefaultSetupData();
+                        DemoDataMgt.EnsureDemoItems();
+                    end;
+
                     if Rec.IsEmpty() then
                         Error(NoDemoSetupErr);
 
@@ -104,10 +109,33 @@ page 50113 "DEF FS Demo Setup"
                     Message(DemoDataCreatedMsg);
                 end;
             }
+            action(DeleteDemoData)
+            {
+                Caption = 'Delete Demo Data';
+                ApplicationArea = All;
+                Image = Delete;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedOnly = true;
+                ToolTip = 'Deletes all generated demo work orders, lines, setup rows, and demo items.';
+
+                trigger OnAction()
+                var
+                    DemoDataMgt: Codeunit "DEF FS Demo Data Mgt";
+                begin
+                    if not Confirm(DeleteDemoDataQst) then
+                        exit;
+
+                    DemoDataMgt.DeleteDemoData();
+                    Message(DemoDataDeletedMsg);
+                end;
+            }
         }
     }
 
     var
         DemoDataCreatedMsg: Label 'Demo work orders were created from setup.', Comment = 'Shown after creating demo work orders from the setup table.';
+        DemoDataDeletedMsg: Label 'All demo data was deleted.', Comment = 'Shown after removing demo data.';
+        DeleteDemoDataQst: Label 'Do you want to delete all demo data?', Comment = 'Confirmation before deleting demo data.';
         NoDemoSetupErr: Label 'Enter at least one demo setup row before creating demo work orders.', Comment = 'Shown when the demo setup table is empty.';
 }

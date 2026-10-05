@@ -43,6 +43,11 @@ table 50105 "DEF FS Work Order Line"
             Caption = 'Needs Purchasing';
             DataClassification = CustomerContent;
         }
+        field(8; "Item Note"; Text[250])
+        {
+            Caption = 'Item Note';
+            DataClassification = CustomerContent;
+        }
     }
 
     keys

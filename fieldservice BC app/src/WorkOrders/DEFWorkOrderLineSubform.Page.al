@@ -37,6 +37,11 @@ page 50106 "DEF FS Line Subform"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the quantity required for this line.';
                 }
+                field("Item Note"; Rec."Item Note")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies any note for this item line.';
+                }
                 field("Needs Purchasing"; Rec."Needs Purchasing")
                 {
                     ApplicationArea = All;

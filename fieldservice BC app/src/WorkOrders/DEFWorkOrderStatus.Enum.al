@@ -25,4 +25,8 @@ enum 50101 "DEF FS Order Status"
     {
         Caption = 'Done';
     }
+    value(5; Failed)
+    {
+        Caption = 'Failed';
+    }
 }

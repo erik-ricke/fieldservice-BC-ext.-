@@ -24,7 +24,7 @@ page 50108 "DEF FS Mobile Activities"
                     var
                         WorkOrderHeader: Record "DEF FS Work Order Header";
                     begin
-                        WorkOrderHeader.SetRange(Status, "DEF FS Order Status"::Open);
+                        WorkOrderHeader.SetFilter(Status, '%1|%2|%3|%4', "DEF FS Order Status"::Open, "DEF FS Order Status"::Traveling, "DEF FS Order Status"::Paused, "DEF FS Order Status"::"In Progress");
                         Page.Run(Page::"DEF FS Mobile Order List", WorkOrderHeader);
                     end;
                 }

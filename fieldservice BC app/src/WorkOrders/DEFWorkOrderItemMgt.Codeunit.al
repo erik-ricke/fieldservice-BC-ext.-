@@ -6,16 +6,19 @@ codeunit 50116 "DEF FS Work Order Item Mgt"
 {
     procedure AddItemToWorkOrder(WorkOrderNo: Code[20])
     var
-        ItemLookup: Page "DEF FS Add Item Lookup";
-        Item: Record Item;
+        ItemDialog: Page "DEF FS Item Add Dialog";
+        SelectedItem: Record Item;
         WorkOrderLine: Record "DEF FS Work Order Line";
         NextLineNo: Integer;
     begin
-        ItemLookup.LookupMode(true);
-        if ItemLookup.RunModal() <> Action::LookupOK then
+        if ItemDialog.RunModal() <> Action::OK then
             exit;
 
-        ItemLookup.GetRecord(Item);
+        if ItemDialog.GetItemNo() = '' then
+            exit;
+
+        if not SelectedItem.Get(ItemDialog.GetItemNo()) then
+            Error('Das gewählte Item wurde nicht gefunden.');
 
         WorkOrderLine.SetRange("Document No.", WorkOrderNo);
         if WorkOrderLine.FindLast() then
@@ -27,9 +30,11 @@ codeunit 50116 "DEF FS Work Order Item Mgt"
         WorkOrderLine."Document No." := WorkOrderNo;
         WorkOrderLine."Line No." := NextLineNo;
         WorkOrderLine.Type := "DEF FS Line Type"::Item;
-        WorkOrderLine."No." := Item."No.";
-        WorkOrderLine.Description := Item.Description;
-        WorkOrderLine.Quantity := 1;
+        WorkOrderLine."No." := SelectedItem."No.";
+        WorkOrderLine.Description := SelectedItem.Description;
+        WorkOrderLine.Quantity := ItemDialog.GetQuantity();
+        WorkOrderLine."Needs Purchasing" := ItemDialog.GetNeedsPurchasing();
+        WorkOrderLine."Item Note" := ItemDialog.GetItemNote();
         WorkOrderLine.Insert(true);
     end;
 }
