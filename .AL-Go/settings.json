@@ -1,7 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v9.2/.Modules/settings.schema.json",
-  "country": "us",
-  "appFolders": [],
-  "testFolders": [],
-  "bcptTestFolders": []
+  "country": "de",
+  "appFolders": [
+    "fieldservice BC app"
+  ],
+  "testFolders": [
+    "fieldservice BC app.Test"
+  ],
+  "bcptTestFolders": [],
+  "enableCodeCop": true,
+  "enableUICop": true,
+  "enablePerTenantExtensionCop": true,
+  "rulesetFile": "fieldservice BC app/fieldservice.ruleset.json"
 }

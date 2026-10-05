@@ -2,9 +2,9 @@
   "id": "0610ff26-67ba-4c2a-8848-fb13b643466a",
   "name": "fieldservice BC app",
   "publisher": "erik",
-  "version": "1.1.0.0",
-  "brief": "",
-  "description": "",
+  "version": "1.2.0.0",
+  "brief": "Field service work orders for mobile technicians and office staff.",
+  "description": "Plan field service work orders in the office, let technicians travel, start, pause and complete jobs from a mobile role center, record the material they use, and see which material needs to be purchased.",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
@@ -16,9 +16,12 @@
   "application": "27.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 51000
+      "from": 50100,
+      "to": 50189
     }
+  ],
+  "resourceFolders": [
+    "resources"
   ],
   "features": [
     "NoImplicitWith",

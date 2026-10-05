@@ -1,0 +1,26 @@
+{
+  "name": "Field Service PTE rules",
+  "description": "This app is a per-tenant extension. AppSourceCop stays enabled for its code rules, but the rules that only apply to AppSource listings are reported as warnings instead of errors, so they stay visible without blocking per-tenant builds.",
+  "rules": [
+    {
+      "id": "AS0051",
+      "action": "Warning",
+      "justification": "Per-tenant extension: help, EULA, privacy statement and logo are only required for AppSource listings."
+    },
+    {
+      "id": "AS0052",
+      "action": "Warning",
+      "justification": "Per-tenant extension: a publisher URL is only required for AppSource listings."
+    },
+    {
+      "id": "AS0084",
+      "action": "Warning",
+      "justification": "Per-tenant extensions must use the 50000..99999 range; the AppSource range does not apply."
+    },
+    {
+      "id": "AS0092",
+      "action": "Warning",
+      "justification": "Telemetry connection string is optional for this per-tenant extension."
+    }
+  ]
+}

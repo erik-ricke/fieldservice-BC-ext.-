@@ -1,5 +1,22 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Sandbox - Ricke UG",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",
+            "environmentName": "Test",
+            "tenant": "2ebf93cd-32a7-4bbf-91fb-57f6fe2e0b36",
+            "authentication": "MicrosoftEntraID",
+            "startupObjectType": "Page",
+            "startupObjectId": 50102,
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "schemaUpdateMode": "ForceSync",
+            "launchBrowser": true
+        }
     ]
 }

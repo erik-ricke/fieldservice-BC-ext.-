@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-DE" original="fieldservice BC app">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2746494384 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Demo Record</source>
+          <target>Field-Service-Demodatensatz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Record - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2746494384 - Field 485252710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record No.</source>
+          <target>Datensatznr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Record - Field Record No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2746494384 - Field 3017471043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <target>Tabellennr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Record - Field Table No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Demo Setup</source>
+          <target>Field-Service-Demoeinrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 3168444338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target>Adresse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <target>Debitorenname</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 900945839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item or Resource No.</source>
+          <target>Artikel- oder Ressourcennr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Item or Resource No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 1983472748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Description</source>
+          <target>Zeilenbeschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Line Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Zeilennr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 158172202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Type</source>
+          <target>Zeilenart</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Line Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 1529485713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Needs Purchasing</source>
+          <target>Einkauf erforderlich</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Needs Purchasing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 4130293374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority</source>
+          <target>Priorität</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Menge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target>Status</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 757540610 - Field 2582137308 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order No.</source>
+          <target>Arbeitsauftragsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Demo Setup - Field Work Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 859618147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Activities</source>
+          <target>Field-Service-Aktivitäten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Mobile Cue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 859618147 - Field 1565143651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Active Orders</source>
+          <target>Aktive Aufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Mobile Cue - Field Open Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 859618147 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Primärschlüssel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Mobile Cue - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3764139639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Setup</source>
+          <target>Field-Service-Einrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3764139639 - Field 314813213 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo Item Template Code</source>
+          <target>Artikelvorlagencode für Demodaten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Setup - Field Demo Item Template Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3764139639 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Primärschlüssel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3764139639 - Field 2351889877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order Nos.</source>
+          <target>Arbeitsauftragsnummern</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Setup - Field Work Order Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Order</source>
+          <target>Field-Service-Arbeitsauftrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 3168444338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target>Adresse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 3826668976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Completion Note</source>
+          <target>Abschlussnotiz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Completion Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <target>Debitor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Debitorennr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 3446166469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo Data</source>
+          <target>Demodaten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Demo Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <target>Nummernserie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 4130293374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority</source>
+          <target>Priorität</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 987300318 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target>Status</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Order Line</source>
+          <target>Field-Service-Arbeitsauftragszeile</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <target>Belegnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 965085591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Note</source>
+          <target>Artikelnotiz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Item Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Zeilennr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 1529485713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Needs Purchasing</source>
+          <target>Einkauf erforderlich</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Needs Purchasing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Menge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940517509 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target>Art</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Line - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2979586377 - NamedType 2708983259" maxwidth="100" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Orders</source>
+          <target>Field-Service-Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Company Init - NamedType WorkOrderNoSeriesDescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 803310761 - NamedType 3940688808" maxwidth="100" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo technician %1</source>
+          <target>Demo-Techniker %1</target>
+          <note from="Developer" annotates="general" priority="2">%1 = resource number</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Demo Data Mgt - NamedType DemoResourceNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 803310761 - NamedType 783670404" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter at least one demo setup row before creating demo work orders.</source>
+          <target>Erfassen Sie mindestens eine Zeile in der Demoeinrichtung, bevor Sie Demo-Arbeitsaufträge erstellen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Demo Data Mgt - NamedType NoDemoSetupErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 803310761 - NamedType 1456306615" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The value "%1" in the demo data file is not a valid %2.</source>
+          <target>Der Wert "%1" in der Demodatendatei ist kein gültiger Wert für %2.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = value from the file, %2 = field caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Demo Data Mgt - NamedType UnknownDemoValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3315657188 - NamedType 736239136" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a note that explains why the job failed.</source>
+          <target>Geben Sie eine Notiz ein, die erklärt, warum der Job fehlgeschlagen ist.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Status Mgt - NamedType FailureNoteRequiredErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3315657188 - NamedType 3381684693" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The job was marked as completed.</source>
+          <target>Der Job wurde als abgeschlossen markiert.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Status Mgt - NamedType JobCompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3315657188 - NamedType 1369127167" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The job was marked as failed.\Note: %1</source>
+          <target>Der Job wurde als fehlgeschlagen markiert.\Notiz: %1</target>
+          <note from="Developer" annotates="general" priority="2">%1 = note entered by the technician</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Status Mgt - NamedType JobFailedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3315657188 - NamedType 2765797844" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The job was paused.</source>
+          <target>Der Job wurde pausiert.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Status Mgt - NamedType JobPausedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3315657188 - NamedType 1034056761" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work order %1 cannot change from status %2 to status %3.</source>
+          <target>Der Arbeitsauftrag %1 kann nicht vom Status %2 in den Status %3 wechseln.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = work order number, %2 = current status, %3 = requested status</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Status Mgt - NamedType TransitionNotAllowedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3947811954 - NamedType 411408799" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The quantity must be greater than 0.</source>
+          <target>Die Menge muss größer als 0 sein.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Work Order Item Mgt - NamedType QuantityMustBePositiveErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3947811954 - NamedType 1649900740" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot add material to work order %1 because its status is %2.</source>
+          <target>Sie können dem Arbeitsauftrag %1 kein Material hinzufügen, weil sein Status %2 ist.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = work order number, %2 = status</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Work Order Item Mgt - NamedType WorkOrderClosedErr</note>
+        </trans-unit>
+        <trans-unit id="Page 2496823176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Item</source>
+          <target>Artikel auswählen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Add Item Lookup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2496823176 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit of measure used for the item.</source>
+          <target>Gibt die Einheit an, die für den Artikel verwendet wird.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Add Item Lookup - Control Base Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2496823176 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item description.</source>
+          <target>Gibt die Beschreibung des Artikels an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Add Item Lookup - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2496823176 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number to add to the work order.</source>
+          <target>Gibt die Nummer des Artikels an, der dem Arbeitsauftrag hinzugefügt wird.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Add Item Lookup - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Demo Setup</source>
+          <target>Field-Service-Demoeinrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - NamedType 2586521248" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 demo rows were added.</source>
+          <target>%1 Demozeilen wurden hinzugefügt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = number of rows</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - NamedType DefaultRowsLoadedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - NamedType 1030500336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to delete all demo work orders and the items and resources that were created for them?</source>
+          <target>Möchten Sie alle Demo-Arbeitsaufträge sowie die dafür angelegten Artikel und Ressourcen löschen?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - NamedType DeleteDemoDataQst</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - NamedType 2571518238" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 demo work orders were created.</source>
+          <target>%1 Demo-Arbeitsaufträge wurden erstellt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = number of work orders</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - NamedType DemoDataCreatedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - NamedType 294972953" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The demo data was deleted.</source>
+          <target>Die Demodaten wurden gelöscht.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - NamedType DemoDataDeletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the service address of the demo work order.</source>
+          <target>Gibt die Serviceadresse des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer name of the demo work order.</source>
+          <target>Gibt den Debitorennamen des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the demo work order.</source>
+          <target>Gibt die Beschreibung des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 900945839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item or resource number of the demo line. Missing items and resources are created as demo records.</source>
+          <target>Gibt die Artikel- oder Ressourcennummer der Demozeile an. Fehlende Artikel und Ressourcen werden als Demodatensätze angelegt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Item or Resource No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 1983472748 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the demo line.</source>
+          <target>Gibt die Beschreibung der Demozeile an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Line Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number of the demo line. Use several line numbers to create several lines for one work order.</source>
+          <target>Gibt die Zeilennummer der Demozeile an. Verwenden Sie mehrere Zeilennummern, um mehrere Zeilen für einen Arbeitsauftrag anzulegen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 158172202 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the demo line represents an item or a resource.</source>
+          <target>Gibt an, ob die Demozeile einen Artikel oder eine Ressource darstellt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Line Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 1529485713 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the demo line is marked as needing purchasing.</source>
+          <target>Gibt an, ob die Demozeile als einkaufspflichtig markiert ist.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Needs Purchasing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the priority of the demo work order.</source>
+          <target>Gibt die Priorität des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity of the demo line.</source>
+          <target>Gibt die Menge der Demozeile an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the status that the demo work order starts with.</source>
+          <target>Gibt den Anfangsstatus des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Control 2582137308 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the demo work order.</source>
+          <target>Gibt die Nummer des Demo-Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Control Work Order No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 198540302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates work orders from the demo setup rows. Missing items and resources are created and remembered as demo data.</source>
+          <target>Erstellt Arbeitsaufträge aus den Zeilen der Demoeinrichtung. Fehlende Artikel und Ressourcen werden angelegt und als Demodaten vermerkt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action CreateDemoOrders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 198540302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Demo Orders</source>
+          <target>Demoaufträge erstellen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action CreateDemoOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 3284951430 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deletes the demo work orders and the items and resources created for them. Real work orders and the setup rows are kept.</source>
+          <target>Löscht die Demo-Arbeitsaufträge sowie die dafür angelegten Artikel und Ressourcen. Echte Arbeitsaufträge und die Einrichtungszeilen bleiben erhalten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action DeleteDemoData - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 3284951430 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Demo Data</source>
+          <target>Demodaten löschen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action DeleteDemoData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 1877175528 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adds the default demo rows that ship with the app. Rows that already exist are kept.</source>
+          <target>Fügt die mit der App ausgelieferten Standard-Demozeilen hinzu. Bereits vorhandene Zeilen bleiben erhalten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action LoadDefaultRows - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 757540610 - Action 1877175528 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Load Default Rows</source>
+          <target>Standardzeilen laden</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Demo Setup - Action LoadDefaultRows - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Material</source>
+          <target>Material verbuchen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - NamedType 867186371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The quantity must be greater than 0.</source>
+          <target>Die Menge muss größer als 0 sein.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - NamedType QuantityMustBePositiveMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 4112877437 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the selected item.</source>
+          <target>Gibt die Beschreibung des ausgewählten Artikels an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemDescription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 4112877437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 332802016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item that was used.</source>
+          <target>Gibt den verwendeten Artikel an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 332802016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <target>Artikelnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 3849572151 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a note about the material, for example the installation place.</source>
+          <target>Gibt eine Notiz zum Material an, z. B. den Einbauort.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemNote - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 3849572151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <target>Notiz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control ItemNote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 1183702929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the item must be purchased, for example because it is not in stock.</source>
+          <target>Gibt an, dass der Artikel eingekauft werden muss, z. B. weil er nicht auf Lager ist.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control NeedsPurchasing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 1183702929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Needs Purchasing</source>
+          <target>Einkauf erforderlich</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control NeedsPurchasing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item were used.</source>
+          <target>Gibt an, wie viele Einheiten des Artikels verwendet wurden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2396355834 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Menge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Item Add Dialog - Control Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Complete Job</source>
+          <target>Job abschließen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - NamedType 3316948004" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a note that explains why the job failed.</source>
+          <target>Geben Sie eine Notiz ein, die erklärt, warum der Job fehlgeschlagen ist.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - NamedType FailureNoteRequiredMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - Control 941476591 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the job was completed, failed or is paused.</source>
+          <target>Gibt an, ob der Job abgeschlossen wurde, fehlgeschlagen ist oder pausiert wird.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - Control CompletionResult - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - Control 941476591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result</source>
+          <target>Ergebnis</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - Control CompletionResult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - Control 2898143332 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a note about the outcome. A note is required when the job failed.</source>
+          <target>Gibt eine Notiz zum Ergebnis an. Wenn der Job fehlgeschlagen ist, ist eine Notiz erforderlich.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - Control Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1505841347 - Control 2898143332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <target>Notiz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Job Completion Dialog - Control Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order Lines</source>
+          <target>Arbeitsauftragszeilen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work or material description for this line.</source>
+          <target>Gibt die Arbeits- oder Materialbeschreibung dieser Zeile an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 965085591 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies any note for this item line.</source>
+          <target>Gibt eine Notiz zu dieser Artikelzeile an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control Item Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 1529485713 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether this item needs to be purchased.</source>
+          <target>Gibt an, ob dieser Artikel eingekauft werden muss.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control Needs Purchasing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item or resource number for this line.</source>
+          <target>Gibt die Artikel- oder Ressourcennummer dieser Zeile an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity required for this line.</source>
+          <target>Gibt die für diese Zeile benötigte Menge an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 927254234 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether this line uses an item or a resource.</source>
+          <target>Gibt an, ob diese Zeile einen Artikel oder eine Ressource verwendet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Line Subform - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2954933195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Activities</source>
+          <target>Aktivitäten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Activities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2954933195 - Control 1715743499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Orders</source>
+          <target>Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Activities - Control OpenOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2954933195 - Control 1565143651 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of work orders that are open, traveling, in progress or paused.</source>
+          <target>Gibt die Anzahl der Arbeitsaufträge an, die offen, in Anfahrt, in Arbeit oder pausiert sind.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Activities - Control Open Orders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Order</source>
+          <target>Field-Service-Arbeitsauftrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 680657041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order</source>
+          <target>Arbeitsauftrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control WorkOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the service address for this work order.</source>
+          <target>Gibt die Serviceadresse dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 3826668976 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the note that was entered when the job was completed, failed or paused.</source>
+          <target>Gibt die Notiz an, die beim Abschließen, Fehlschlagen oder Pausieren des Jobs eingegeben wurde.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Completion Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer associated with this work order.</source>
+          <target>Gibt den Debitor dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a short summary of the requested field service work.</source>
+          <target>Gibt eine kurze Zusammenfassung der angeforderten Field-Service-Arbeit an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order number used to identify this service visit.</source>
+          <target>Gibt die Arbeitsauftragsnummer an, die diesen Serviceeinsatz identifiziert.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the priority of this work order.</source>
+          <target>Gibt die Priorität dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current processing status of this work order.</source>
+          <target>Gibt den aktuellen Bearbeitungsstatus dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 1173388725 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adds an item that was used for this work order.</source>
+          <target>Fügt einen Artikel hinzu, der für diesen Arbeitsauftrag verwendet wurde.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action AddSparePart - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 1173388725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Material</source>
+          <target>Material verbuchen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action AddSparePart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 3049327842 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Completes this work order, marks it as failed, or pauses it.</source>
+          <target>Schließt diesen Arbeitsauftrag ab, markiert ihn als fehlgeschlagen oder pausiert ihn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action CompleteJob - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 3049327842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Complete Job</source>
+          <target>Job abschließen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action CompleteJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 3800129095 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pauses this work order.</source>
+          <target>Pausiert diesen Arbeitsauftrag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action Pause/Stop - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 3800129095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pause</source>
+          <target>Pause</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action Pause/Stop - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2988884353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starts this work order.</source>
+          <target>Startet diesen Arbeitsauftrag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action StartJob - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2988884353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Job</source>
+          <target>Job starten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action StartJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2631972836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Marks this work order as currently traveling to the customer.</source>
+          <target>Markiert diesen Arbeitsauftrag als aktuell in Anfahrt zum Debitor.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action Traveling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2631972836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Travel</source>
+          <target>Anfahrt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action Traveling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Orders</source>
+          <target>Field-Service-Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer name associated with this work order.</source>
+          <target>Gibt den Debitorennamen dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order number used to identify this service visit.</source>
+          <target>Gibt die Arbeitsauftragsnummer an, die diesen Serviceeinsatz identifiziert.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the priority of this work order. Higher numbers are shown first.</source>
+          <target>Gibt die Priorität dieses Arbeitsauftrags an. Höhere Zahlen werden zuerst angezeigt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current processing status of this work order.</source>
+          <target>Gibt den aktuellen Bearbeitungsstatus dieses Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 1173388725 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adds an item that was used for the selected work order.</source>
+          <target>Fügt einen Artikel hinzu, der für den ausgewählten Arbeitsauftrag verwendet wurde.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action AddSparePart - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 1173388725 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Material</source>
+          <target>Material verbuchen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action AddSparePart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 3049327842 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Completes the selected field service job, marks it as failed, or pauses it.</source>
+          <target>Schließt den ausgewählten Job ab, markiert ihn als fehlgeschlagen oder pausiert ihn.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action CompleteJob - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 3049327842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Complete Job</source>
+          <target>Job abschließen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action CompleteJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2713728774 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pauses the selected field service job.</source>
+          <target>Pausiert den ausgewählten Job.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action PauseStop - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2713728774 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pause</source>
+          <target>Pause</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action PauseStop - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2988884353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starts the selected field service job.</source>
+          <target>Startet den ausgewählten Job.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action StartJob - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2988884353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Job</source>
+          <target>Job starten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action StartJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2631972836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Marks the job as currently traveling to the customer.</source>
+          <target>Markiert den Job als aktuell in Anfahrt zum Debitor.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action Traveling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2631972836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Travel</source>
+          <target>Anfahrt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action Traveling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service</source>
+          <target>Field Service</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 707256628 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the work orders to travel to, start, pause and complete.</source>
+          <target>Öffnet die Arbeitsaufträge zum Anfahren, Starten, Pausieren und Abschließen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action MyWorkOrders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 707256628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Work Orders</source>
+          <target>Meine Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action MyWorkOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 2685376072 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Orders</source>
+          <target>Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action WorkOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 2520438176 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the work orders to travel to, start, pause and complete.</source>
+          <target>Öffnet die Arbeitsaufträge zum Anfahren, Starten, Pausieren und Abschließen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action MobileWorkOrders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 2520438176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Work Orders</source>
+          <target>Meine Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action MobileWorkOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 1380947973 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the office overview with the material that needs to be purchased.</source>
+          <target>Öffnet die Büroübersicht mit dem Material, das eingekauft werden muss.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action OfficeOverview - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 1380947973 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Office Overview</source>
+          <target>Büroübersicht</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action OfficeOverview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 2977368901 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the list of all work orders to create and edit them.</source>
+          <target>Öffnet die Liste aller Arbeitsaufträge zum Anlegen und Bearbeiten.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action WorkOrderEntry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1635273871 - Action 2977368901 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Work Orders</source>
+          <target>Alle Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Role Center - Action WorkOrderEntry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Office Work Orders</source>
+          <target>Arbeitsaufträge (Büro)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the service address.</source>
+          <target>Gibt die Serviceadresse an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer for this work order.</source>
+          <target>Gibt den Debitor für diesen Arbeitsauftrag an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a short description of the work order.</source>
+          <target>Gibt eine kurze Beschreibung des Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order number.</source>
+          <target>Gibt die Arbeitsauftragsnummer an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order priority.</source>
+          <target>Gibt die Priorität des Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current status of the work order.</source>
+          <target>Gibt den aktuellen Status des Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Control 2255483610 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Material to Purchase</source>
+          <target>Einzukaufendes Material</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Control PurchaseLines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Action 2662476652 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the selected work order.</source>
+          <target>Öffnet den ausgewählten Arbeitsauftrag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Action OpenCard - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2747472963 - Action 2662476652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Work Order</source>
+          <target>Arbeitsauftrag öffnen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Office Overview - Action OpenCard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Setup</source>
+          <target>Field-Service-Einrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Control 4012215381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo Data</source>
+          <target>Demodaten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Control DemoData - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Control 314813213 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item template that is applied to items created by the demo data tool, for example to set the unit of measure and posting groups.</source>
+          <target>Gibt die Artikelvorlage an, die auf Artikel angewendet wird, die vom Demodaten-Tool angelegt werden, z. B. um Einheit und Buchungsgruppen festzulegen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Control Demo Item Template Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <target>Nummerierung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Control 2351889877 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series that is used to number new work orders.</source>
+          <target>Gibt die Nummernserie an, mit der neue Arbeitsaufträge nummeriert werden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Control Work Order Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Action 4152264940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opens the rows used to create demo work orders.</source>
+          <target>Öffnet die Zeilen, aus denen Demo-Arbeitsaufträge erstellt werden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Action OpenDemoSetup - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3764139639 - Action 4152264940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo Setup</source>
+          <target>Demoeinrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Setup - Action OpenDemoSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Order</source>
+          <target>Field-Service-Arbeitsauftrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Allgemein</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the service address.</source>
+          <target>Gibt die Serviceadresse an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 3826668976 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the note that was entered when the job was completed, failed or paused.</source>
+          <target>Gibt die Notiz an, die beim Abschließen, Fehlschlagen oder Pausieren des Jobs eingegeben wurde.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Completion Note - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the customer.</source>
+          <target>Gibt den Namen des Debitors an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer that the work is done for. Selecting a customer fills in the name and address.</source>
+          <target>Gibt den Debitor an, für den die Arbeit ausgeführt wird. Bei Auswahl eines Debitors werden Name und Adresse ausgefüllt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 3446166469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the work order was created by the demo data tool and is removed by Delete Demo Data.</source>
+          <target>Gibt an, dass der Arbeitsauftrag vom Demodaten-Tool angelegt wurde und mit "Demodaten löschen" entfernt wird.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Demo Data - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a short summary of the requested field service work.</source>
+          <target>Gibt eine kurze Zusammenfassung der angeforderten Field-Service-Arbeit an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order number. Leave it empty to use the number series from the Field Service Setup.</source>
+          <target>Gibt die Arbeitsauftragsnummer an. Lassen Sie das Feld leer, um die Nummernserie aus der Field-Service-Einrichtung zu verwenden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the priority of the work order. Higher numbers are shown first to technicians.</source>
+          <target>Gibt die Priorität des Arbeitsauftrags an. Höhere Zahlen werden Technikern zuerst angezeigt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current processing status. Technicians change it from their role center.</source>
+          <target>Gibt den aktuellen Bearbeitungsstatus an. Techniker ändern ihn über ihr Rollencenter.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Action 2071937805 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sets a failed work order back to Open so that it can be scheduled again.</source>
+          <target>Setzt einen fehlgeschlagenen Arbeitsauftrag auf "Offen" zurück, damit er neu eingeplant werden kann.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Action Reopen - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Action 2071937805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reopen</source>
+          <target>Erneut öffnen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Action Reopen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Work Orders</source>
+          <target>Field-Service-Arbeitsaufträge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 3168444338 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the service address.</source>
+          <target>Gibt die Serviceadresse an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the customer.</source>
+          <target>Gibt den Namen des Debitors an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer that the work is done for.</source>
+          <target>Gibt den Debitor an, für den die Arbeit ausgeführt wird.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a short summary of the requested field service work.</source>
+          <target>Gibt eine kurze Zusammenfassung der angeforderten Field-Service-Arbeit an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the work order number.</source>
+          <target>Gibt die Arbeitsauftragsnummer an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 4130293374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the priority of the work order.</source>
+          <target>Gibt die Priorität des Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 131847211 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current processing status of the work order.</source>
+          <target>Gibt den aktuellen Bearbeitungsstatus des Arbeitsauftrags an.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Entry - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Profile 273949260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Technician</source>
+          <target>Field-Service-Techniker</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile DEF FS Mobile Tech - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 273949260 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mobile role for field service work orders.</source>
+          <target>Mobile Rolle für Field-Service-Arbeitsaufträge.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile DEF FS Mobile Tech - Property ProfileDescription</note>
+        </trans-unit>
+        <trans-unit id="Enum 2124367313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Completion Result</source>
+          <target>Field-Service-Abschlussergebnis</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Completion Result - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2124367313 - EnumValue 3665605423 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job completed</source>
+          <target>Job abgeschlossen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Completion Result - EnumValue Completed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2124367313 - EnumValue 3826689261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job failed</source>
+          <target>Job fehlgeschlagen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Completion Result - EnumValue Failed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2124367313 - EnumValue 1264998402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paused</source>
+          <target>Pausiert</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Completion Result - EnumValue Paused - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3358856512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Line Type</source>
+          <target>Field-Service-Zeilenart</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Line Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3358856512 - EnumValue 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <target>Artikel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Line Type - EnumValue Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3358856512 - EnumValue 348912950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource</source>
+          <target>Ressource</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Line Type - EnumValue Resource - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Order Status</source>
+          <target>Field-Service-Auftragsstatus</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 1178809860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Done</source>
+          <target>Erledigt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue Done - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 3826689261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Failed</source>
+          <target>Fehlgeschlagen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue Failed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 1090713286 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>In Progress</source>
+          <target>In Arbeit</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue In Progress - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open</source>
+          <target>Offen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue Open - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 1264998402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paused</source>
+          <target>Pausiert</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue Paused - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2642508868 - EnumValue 2631972836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traveling</source>
+          <target>Anfahrt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DEF FS Order Status - EnumValue Traveling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 972851463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Admin</source>
+          <target>Field-Service-Administration</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet DEF FS ADMIN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1688636694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Service Mobile</source>
+          <target>Field Service mobil</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet DEF FS MOBILE - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
