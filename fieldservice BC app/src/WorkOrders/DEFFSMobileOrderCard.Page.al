@@ -49,6 +49,21 @@ page 50103 "DEF FS Mobile Order Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the service address for this work order.';
                 }
+                field("Planned Date"; Rec."Planned Date")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the day the job is planned for.';
+                }
+                field("Planned Start Time"; Rec."Planned Start Time")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the time the job is planned to start.';
+                }
+                field("Estimated Duration"; Rec."Estimated Duration")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies how long the job is expected to take on site.';
+                }
                 field("Completion Note"; Rec."Completion Note")
                 {
                     ApplicationArea = All;
@@ -139,6 +154,18 @@ page 50103 "DEF FS Mobile Order Card"
                     StatusMgt.CompleteWithDialog(Rec);
                     CurrPage.Update(false);
                 end;
+            }
+        }
+        area(Navigation)
+        {
+            action(StatusHistory)
+            {
+                ApplicationArea = All;
+                Caption = 'Status History';
+                Image = History;
+                RunObject = page "DEF FS Status Log Entries";
+                RunPageLink = "Work Order No." = field("No.");
+                ToolTip = 'Opens the status changes of this work order.';
             }
         }
         area(Promoted)

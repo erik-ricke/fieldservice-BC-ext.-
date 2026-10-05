@@ -2,6 +2,7 @@ namespace DEF.FieldService.Test;
 
 using DEF.FieldService.WorkOrders;
 using Microsoft.Foundation.NoSeries;
+using Microsoft.Projects.Resources.Resource;
 
 /// <summary>
 /// Assertions and test data helpers shared by the Field Service tests.
@@ -60,6 +61,42 @@ codeunit 50193 "DEF FS Test Library"
         WorkOrderLine."Line No." := LineNo;
         WorkOrderLine.Quantity := 1;
         WorkOrderLine.Insert(true);
+    end;
+
+    /// <summary>
+    /// Creates a person resource that is linked to the given user name. The user does not have to exist.
+    /// </summary>
+    procedure CreateTechnician(UserName: Code[50]) ResourceNo: Code[20]
+    var
+        Resource: Record Resource;
+    begin
+        ResourceNo := UniqueCode();
+        Resource.Init();
+        Resource."No." := ResourceNo;
+        Resource.Name := ResourceNo;
+        Resource.Type := Resource.Type::Person;
+        Resource.Insert(true);
+        Resource.Validate("DEF FS User ID", UserName);
+        Resource.Modify(true);
+    end;
+
+    procedure CreateAssignedWorkOrder(ResourceNo: Code[20]; Status: Enum "DEF FS Order Status"; PlannedDate: Date) WorkOrderHeader: Record "DEF FS Work Order Header"
+    begin
+        WorkOrderHeader := CreateWorkOrder(Status, false);
+        WorkOrderHeader."Assigned Resource No." := ResourceNo;
+        WorkOrderHeader."Planned Date" := PlannedDate;
+        WorkOrderHeader.Modify(true);
+    end;
+
+    procedure InsertStatusLogEntry(WorkOrderNo: Code[20]; ToStatus: Enum "DEF FS Order Status"; ChangedAt: DateTime)
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+    begin
+        StatusLogEntry.Init();
+        StatusLogEntry."Work Order No." := WorkOrderNo;
+        StatusLogEntry."To Status" := ToStatus;
+        StatusLogEntry."Changed At" := ChangedAt;
+        StatusLogEntry.Insert(true);
     end;
 
     /// <summary>

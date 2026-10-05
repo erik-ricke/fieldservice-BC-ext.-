@@ -28,10 +28,20 @@ page 50102 "DEF FS Mobile Order List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the customer name associated with this work order.';
                 }
+                field("Planned Date"; Rec."Planned Date")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the day the job is planned for.';
+                }
+                field("Planned Start Time"; Rec."Planned Start Time")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the time the job is planned to start.';
+                }
                 field(Priority; Rec.Priority)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the priority of this work order. Higher numbers are shown first.';
+                    ToolTip = 'Specifies the priority of this work order. Higher numbers are more urgent.';
                 }
                 field(Status; Rec.Status)
                 {
@@ -123,6 +133,19 @@ page 50102 "DEF FS Mobile Order List"
                 end;
             }
         }
+        area(Navigation)
+        {
+            action(StatusHistory)
+            {
+                ApplicationArea = All;
+                Caption = 'Status History';
+                Scope = Repeater;
+                Image = History;
+                RunObject = page "DEF FS Status Log Entries";
+                RunPageLink = "Work Order No." = field("No.");
+                ToolTip = 'Opens the status changes of the selected work order.';
+            }
+        }
         area(Promoted)
         {
             group(Category_Process)
@@ -147,9 +170,12 @@ page 50102 "DEF FS Mobile Order List"
     }
 
     trigger OnOpenPage()
+    var
+        TechnicianMgt: Codeunit "DEF FS Technician Mgt";
     begin
-        Rec.SetCurrentKey(Priority, Status);
-        Rec.Ascending(false);
+        if not TechnicianMgt.FilterOnCurrentTechnician(Rec) then
+            TechnicianMgt.SendNotLinkedNotification();
+        Rec.SetCurrentKey("Planned Date", "Planned Start Time");
     end;
 
     trigger OnAfterGetCurrRecord()

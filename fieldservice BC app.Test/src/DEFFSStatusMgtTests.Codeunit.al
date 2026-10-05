@@ -113,4 +113,57 @@ codeunit 50190 "DEF FS Status Mgt Tests"
         WorkOrderHeader.Get(WorkOrderHeader."No.");
         TestLibrary.AreEqual("DEF FS Order Status"::Done, WorkOrderHeader.Status, 'Status after completion');
     end;
+
+    [Test]
+    procedure SetStatus_OpenToTraveling_WritesLogEntry()
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+        WorkOrderHeader: Record "DEF FS Work Order Header";
+    begin
+        WorkOrderHeader := TestLibrary.CreateWorkOrder("DEF FS Order Status"::Open, false);
+        WorkOrderHeader."Assigned Resource No." := TestLibrary.CreateTechnician(TestLibrary.UniqueCode());
+        WorkOrderHeader.Modify(true);
+
+        StatusMgt.SetStatus(WorkOrderHeader, WorkOrderHeader.Status::Traveling);
+
+        StatusLogEntry.SetRange("Work Order No.", WorkOrderHeader."No.");
+        TestLibrary.AreEqual(1, StatusLogEntry.Count(), 'Number of log entries');
+        StatusLogEntry.FindFirst();
+        TestLibrary.AreEqual("DEF FS Order Status"::Open, StatusLogEntry."From Status", 'From status');
+        TestLibrary.AreEqual("DEF FS Order Status"::Traveling, StatusLogEntry."To Status", 'To status');
+        TestLibrary.AreEqual(WorkOrderHeader."Assigned Resource No.", StatusLogEntry."Resource No.", 'Technician');
+        TestLibrary.AreEqual(UpperCase(UserId()), StatusLogEntry."User ID", 'User');
+        TestLibrary.IsTrue(StatusLogEntry."Changed At" <> 0DT, 'Changed at must be set');
+    end;
+
+    [Test]
+    procedure Complete_FailedWithNote_LogsNote()
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+        WorkOrderHeader: Record "DEF FS Work Order Header";
+    begin
+        WorkOrderHeader := TestLibrary.CreateWorkOrder("DEF FS Order Status"::"In Progress", false);
+
+        StatusMgt.Complete(WorkOrderHeader, "DEF FS Completion Result"::Failed, 'Customer not at home');
+
+        StatusLogEntry.SetRange("Work Order No.", WorkOrderHeader."No.");
+        StatusLogEntry.FindFirst();
+        TestLibrary.AreEqual("DEF FS Order Status"::Failed, StatusLogEntry."To Status", 'To status');
+        TestLibrary.AreEqual('Customer not at home', StatusLogEntry.Note, 'Note');
+    end;
+
+    [Test]
+    procedure SetStatus_NotAllowed_WritesNoLogEntry()
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+        WorkOrderHeader: Record "DEF FS Work Order Header";
+    begin
+        WorkOrderHeader := TestLibrary.CreateWorkOrder("DEF FS Order Status"::Done, false);
+
+        asserterror StatusMgt.SetStatus(WorkOrderHeader, WorkOrderHeader.Status::Open);
+
+        TestLibrary.ExpectedError('cannot change from status');
+        StatusLogEntry.SetRange("Work Order No.", WorkOrderHeader."No.");
+        TestLibrary.IsTrue(StatusLogEntry.IsEmpty(), 'No log entry for a rejected change');
+    end;
 }

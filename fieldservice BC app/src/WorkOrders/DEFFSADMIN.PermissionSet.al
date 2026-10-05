@@ -19,6 +19,7 @@ permissionset 50129 "DEF FS ADMIN"
     Permissions =
         tabledata "DEF FS Work Order Header" = RIMD,
         tabledata "DEF FS Work Order Line" = RIMD,
+        tabledata "DEF FS Status Log Entry" = RIMD,
         tabledata "DEF FS Setup" = RIMD,
         tabledata "DEF FS Demo Setup" = RIMD,
         tabledata "DEF FS Demo Record" = RIMD,

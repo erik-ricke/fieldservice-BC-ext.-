@@ -13,15 +13,11 @@ codeunit 50126 "DEF FS Status Mgt"
         JobPausedMsg: Label 'The job was paused.';
 
     /// <summary>
-    /// Changes the status of the work order after checking that the transition is allowed.
+    /// Changes the status of the work order after checking that the transition is allowed, and logs the change.
     /// </summary>
     procedure SetStatus(var WorkOrderHeader: Record "DEF FS Work Order Header"; NewStatus: Enum "DEF FS Order Status")
     begin
-        if not IsTransitionAllowed(WorkOrderHeader.Status, NewStatus) then
-            Error(TransitionNotAllowedErr, WorkOrderHeader."No.", WorkOrderHeader.Status, NewStatus);
-
-        WorkOrderHeader.Status := NewStatus;
-        WorkOrderHeader.Modify(true);
+        ChangeStatus(WorkOrderHeader, NewStatus, '');
     end;
 
     /// <summary>
@@ -34,7 +30,7 @@ codeunit 50126 "DEF FS Status Mgt"
 
         if Note.Trim() <> '' then
             WorkOrderHeader."Completion Note" := Note;
-        SetStatus(WorkOrderHeader, GetStatusForResult(CompletionResult));
+        ChangeStatus(WorkOrderHeader, GetStatusForResult(CompletionResult), Note);
     end;
 
     /// <summary>
@@ -104,6 +100,41 @@ codeunit 50126 "DEF FS Status Mgt"
                 exit(ToStatus = ToStatus::Open);
         end;
         exit(false);
+    end;
+
+    local procedure ChangeStatus(var WorkOrderHeader: Record "DEF FS Work Order Header"; NewStatus: Enum "DEF FS Order Status"; Note: Text[250])
+    var
+        OldStatus: Enum "DEF FS Order Status";
+    begin
+        if not IsTransitionAllowed(WorkOrderHeader.Status, NewStatus) then
+            Error(TransitionNotAllowedErr, WorkOrderHeader."No.", WorkOrderHeader.Status, NewStatus);
+
+        OldStatus := WorkOrderHeader.Status;
+        WorkOrderHeader.Status := NewStatus;
+        WorkOrderHeader.Modify(true);
+        InsertStatusLogEntry(WorkOrderHeader, OldStatus, Note);
+
+        OnAfterSetStatus(WorkOrderHeader, OldStatus);
+    end;
+
+    local procedure InsertStatusLogEntry(WorkOrderHeader: Record "DEF FS Work Order Header"; OldStatus: Enum "DEF FS Order Status"; Note: Text[250])
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+    begin
+        StatusLogEntry.Init();
+        StatusLogEntry."Work Order No." := WorkOrderHeader."No.";
+        StatusLogEntry."From Status" := OldStatus;
+        StatusLogEntry."To Status" := WorkOrderHeader.Status;
+        StatusLogEntry."Changed At" := CurrentDateTime();
+        StatusLogEntry."User ID" := CopyStr(UserId(), 1, MaxStrLen(StatusLogEntry."User ID"));
+        StatusLogEntry."Resource No." := WorkOrderHeader."Assigned Resource No.";
+        StatusLogEntry.Note := Note;
+        StatusLogEntry.Insert(true);
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterSetStatus(var WorkOrderHeader: Record "DEF FS Work Order Header"; OldStatus: Enum "DEF FS Order Status")
+    begin
     end;
 
     [IntegrationEvent(false, false)]

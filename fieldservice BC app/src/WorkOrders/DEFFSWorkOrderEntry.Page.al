@@ -46,6 +46,16 @@ page 50118 "DEF FS Work Order Entry"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the priority of the work order.';
                 }
+                field("Assigned Resource No."; Rec."Assigned Resource No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the technician who does the job.';
+                }
+                field("Planned Date"; Rec."Planned Date")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the day the job is planned for.';
+                }
                 field(Status; Rec.Status)
                 {
                     ApplicationArea = All;

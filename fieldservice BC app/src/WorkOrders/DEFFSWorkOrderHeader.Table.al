@@ -1,6 +1,7 @@
 namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Foundation.NoSeries;
+using Microsoft.Projects.Resources.Resource;
 using Microsoft.Sales.Customer;
 
 table 50100 "DEF FS Work Order Header"
@@ -93,6 +94,43 @@ table 50100 "DEF FS Work Order Header"
                 Rec.Address := CopyStr(FormatCustomerAddress(Customer), 1, MaxStrLen(Rec.Address));
             end;
         }
+        field(11; "Assigned Resource No."; Code[20])
+        {
+            Caption = 'Assigned Technician';
+            DataClassification = CustomerContent;
+            TableRelation = Resource where(Type = const(Person));
+
+            trigger OnValidate()
+            begin
+                if Rec."Assigned Resource No." = xRec."Assigned Resource No." then
+                    exit;
+
+                if Rec.Status = Rec.Status::Done then
+                    Error(CannotReassignDoneErr, Rec."No.");
+            end;
+        }
+        field(12; "Assigned Resource Name"; Text[100])
+        {
+            Caption = 'Assigned Technician Name';
+            FieldClass = FlowField;
+            CalcFormula = lookup(Resource.Name where("No." = field("Assigned Resource No.")));
+            Editable = false;
+        }
+        field(13; "Planned Date"; Date)
+        {
+            Caption = 'Planned Date';
+            DataClassification = CustomerContent;
+        }
+        field(14; "Planned Start Time"; Time)
+        {
+            Caption = 'Planned Start Time';
+            DataClassification = CustomerContent;
+        }
+        field(15; "Estimated Duration"; Duration)
+        {
+            Caption = 'Estimated Duration';
+            DataClassification = CustomerContent;
+        }
     }
 
     keys
@@ -102,6 +140,12 @@ table 50100 "DEF FS Work Order Header"
             Clustered = true;
         }
         key(PriorityStatus; Priority, Status)
+        {
+        }
+        key(Schedule; "Planned Date", "Planned Start Time")
+        {
+        }
+        key(Technician; "Assigned Resource No.", Status)
         {
         }
     }
@@ -121,15 +165,21 @@ table 50100 "DEF FS Work Order Header"
 
     trigger OnDelete()
     var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
         WorkOrderLine: Record "DEF FS Work Order Line";
     begin
         WorkOrderLine.SetRange("Document No.", Rec."No.");
         if not WorkOrderLine.IsEmpty() then
             WorkOrderLine.DeleteAll(true);
+
+        StatusLogEntry.SetRange("Work Order No.", Rec."No.");
+        if not StatusLogEntry.IsEmpty() then
+            StatusLogEntry.DeleteAll(true);
     end;
 
     var
         FSSetup: Record "DEF FS Setup";
+        CannotReassignDoneErr: Label 'You cannot change the technician of work order %1 because the job is done.', Comment = '%1 = work order number';
         AddressWithCityTok: Label '%1, %2 %3', Locked = true, Comment = '%1 = street address, %2 = post code, %3 = city';
 
     /// <summary>

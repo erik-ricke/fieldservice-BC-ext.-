@@ -48,6 +48,21 @@ codeunit 50191 "DEF FS Work Order Tests"
     end;
 
     [Test]
+    procedure Delete_OrderWithStatusLog_DeletesLogEntries()
+    var
+        StatusLogEntry: Record "DEF FS Status Log Entry";
+        WorkOrderHeader: Record "DEF FS Work Order Header";
+    begin
+        WorkOrderHeader := TestLibrary.CreateWorkOrder("DEF FS Order Status"::Open, false);
+        TestLibrary.InsertStatusLogEntry(WorkOrderHeader."No.", "DEF FS Order Status"::Traveling, CurrentDateTime());
+
+        WorkOrderHeader.Delete(true);
+
+        StatusLogEntry.SetRange("Work Order No.", WorkOrderHeader."No.");
+        TestLibrary.IsTrue(StatusLogEntry.IsEmpty(), 'Log entries must be deleted with their work order');
+    end;
+
+    [Test]
     procedure ValidateCustomerNo_ExistingCustomer_FillsNameAndAddress()
     var
         Customer: Record Customer;
