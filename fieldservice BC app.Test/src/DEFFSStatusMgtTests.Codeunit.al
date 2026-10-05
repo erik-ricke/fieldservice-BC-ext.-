@@ -56,8 +56,9 @@ codeunit 50190 "DEF FS Status Mgt Tests"
 
         asserterror StatusMgt.SetStatus(WorkOrderHeader, WorkOrderHeader.Status::Done);
 
+        // asserterror rolls back the whole test transaction, including the inserted work order,
+        // so the unchanged status is checked on the record variable instead of re-reading it.
         TestLibrary.ExpectedError('cannot change from status');
-        WorkOrderHeader.Get(WorkOrderHeader."No.");
         TestLibrary.AreEqual("DEF FS Order Status"::Open, WorkOrderHeader.Status, 'Status must not change');
     end;
 
