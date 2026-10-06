@@ -1,5 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
+using Microsoft.Foundation.Attachment;
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Projects.Resources.Resource;
 using Microsoft.Sales.Customer;
@@ -131,6 +132,15 @@ table 50100 "DEF FS Work Order Header"
             Caption = 'Estimated Duration';
             DataClassification = CustomerContent;
         }
+        field(16; "No. of Photos"; Integer)
+        {
+            Caption = 'No. of Photos';
+            FieldClass = FlowField;
+            CalcFormula = count("Document Attachment" where("Table ID" = const(50100),
+                                                             "No." = field("No."),
+                                                             "File Type" = const(Image)));
+            Editable = false;
+        }
     }
 
     keys
@@ -165,6 +175,7 @@ table 50100 "DEF FS Work Order Header"
 
     trigger OnDelete()
     var
+        DocumentAttachment: Record "Document Attachment";
         StatusLogEntry: Record "DEF FS Status Log Entry";
         WorkOrderLine: Record "DEF FS Work Order Line";
     begin
@@ -175,6 +186,11 @@ table 50100 "DEF FS Work Order Header"
         StatusLogEntry.SetRange("Work Order No.", Rec."No.");
         if not StatusLogEntry.IsEmpty() then
             StatusLogEntry.DeleteAll(true);
+
+        DocumentAttachment.SetRange("Table ID", Database::"DEF FS Work Order Header");
+        DocumentAttachment.SetRange("No.", Rec."No.");
+        if not DocumentAttachment.IsEmpty() then
+            DocumentAttachment.DeleteAll(true);
     end;
 
     var

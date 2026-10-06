@@ -297,6 +297,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 987300318 - Field 3224055475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Photos</source>
+          <target>Anzahl Fotos</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table DEF FS Work Order Header - Field No. of Photos - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 987300318 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No. Series</source>
           <target>Nummernserie</target>
@@ -404,6 +410,24 @@
           <target>Der Wert "%1" in der Demodatendatei ist kein gültiger Wert für %2.</target>
           <note from="Developer" annotates="general" priority="2">%1 = value from the file, %2 = field caption</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Demo Data Mgt - NamedType UnknownDemoValueErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3184422604 - NamedType 106925807" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The photo was added to work order %1.</source>
+          <target>Das Foto wurde zu Arbeitsauftrag %1 hinzugefügt.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = work order number</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Photo Mgt - NamedType PhotoAddedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3184422604 - NamedType 3047533672" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select a photo</source>
+          <target>Foto auswählen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Photo Mgt - NamedType SelectPhotoTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3184422604 - NamedType 1649900740" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You cannot add photos to work order %1 because its status is %2.</source>
+          <target>Sie können zu Arbeitsauftrag %1 keine Fotos hinzufügen, weil sein Status %2 ist.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = work order number, %2 = status</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit DEF FS Photo Mgt - NamedType WorkOrderClosedErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 3315657188 - NamedType 736239136" size-unit="char" translate="yes" xml:space="preserve">
           <source>Enter a note that explains why the job failed.</source>
@@ -849,6 +873,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 3224055475 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many photos are attached to the work order. Open the Photos and Attachments factbox to view them.</source>
+          <target>Gibt an, wie viele Fotos an den Arbeitsauftrag angehängt sind. Öffnen Sie die Infobox Fotos und Anhänge, um sie anzusehen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control No. of Photos - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2222864564 - Control 2494576388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the day the job is planned for.</source>
           <target>Gibt den Tag an, für den der Auftrag geplant ist.</target>
@@ -872,6 +902,12 @@
           <target>Gibt den aktuellen Bearbeitungsstatus dieses Arbeitsauftrags an.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Control 1225782422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Photos and Attachments</source>
+          <target>Fotos und Anhänge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Control Attachments - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2222864564 - Action 2506567754 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Opens the status changes of this work order.</source>
@@ -932,6 +968,18 @@
           <target>Job starten</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action StartJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2876688881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Takes a photo with the camera of your device and attaches it to this work order. Without a camera, you can upload an image file.</source>
+          <target>Nimmt ein Foto mit der Kamera Ihres Geräts auf und hängt es an diesen Arbeitsauftrag an. Ohne Kamera können Sie eine Bilddatei hochladen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action TakePhoto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2222864564 - Action 2876688881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Take Photo</source>
+          <target>Foto aufnehmen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order Card - Action TakePhoto - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2222864564 - Action 2631972836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Marks this work order as currently traveling to the customer.</source>
@@ -1046,6 +1094,18 @@
           <target>Job starten</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action StartJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2876688881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Takes a photo with the camera of your device and attaches it to the selected work order. Without a camera, you can upload an image file.</source>
+          <target>Nimmt ein Foto mit der Kamera Ihres Geräts auf und hängt es an den ausgewählten Arbeitsauftrag an. Ohne Kamera können Sie eine Bilddatei hochladen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action TakePhoto - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 264833810 - Action 2876688881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Take Photo</source>
+          <target>Foto aufnehmen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Mobile Order List - Action TakePhoto - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 264833810 - Action 2631972836 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Marks the job as currently traveling to the customer.</source>
@@ -1389,6 +1449,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control TimeSpent - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 3224055475 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many photos are attached to the work order. Open the Photos and Attachments factbox to view them.</source>
+          <target>Gibt an, wie viele Fotos an den Arbeitsauftrag angehängt sind. Öffnen Sie die Infobox Fotos und Anhänge, um sie anzusehen.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control No. of Photos - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1390494147 - Control 2373569895 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies how long the technician traveled to the customer, based on the status history.</source>
           <target>Gibt an, wie lange der Techniker zum Kunden gefahren ist, basierend auf dem Statusverlauf.</target>
@@ -1412,6 +1478,12 @@
           <target>Arbeitszeit</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control WorkTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1390494147 - Control 1225782422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Photos and Attachments</source>
+          <target>Fotos und Anhänge</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DEF FS Work Order Card - Control Attachments - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1390494147 - Action 2506567754 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Opens the status changes of this work order.</source>

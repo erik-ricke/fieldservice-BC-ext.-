@@ -13,7 +13,8 @@ fieldservice BC app.Test/
     ├── DEFFSWorkOrderTests.Codeunit.al
     ├── DEFFSDemoDataTests.Codeunit.al
     ├── DEFFSTechnicianTests.Codeunit.al
-    └── DEFFSWorkTimeTests.Codeunit.al
+    ├── DEFFSWorkTimeTests.Codeunit.al
+    └── DEFFSPhotoTests.Codeunit.al
 ```
 
 ## Naming Conventions
@@ -59,7 +60,7 @@ codeunit 50190 "DEF FS Status Mgt Tests"
       "id": "0610ff26-67ba-4c2a-8848-fb13b643466a",
       "name": "fieldservice BC app",
       "publisher": "erik",
-      "version": "1.3.0.0"
+      "version": "1.4.0.0"
     }
   ],
   "idRanges": [ { "from": 50190, "to": 50200 } ]

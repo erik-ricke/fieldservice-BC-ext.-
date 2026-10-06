@@ -116,6 +116,23 @@ page 50102 "DEF FS Mobile Order List"
                     CurrPage.Update(false);
                 end;
             }
+            action(TakePhoto)
+            {
+                ApplicationArea = All;
+                Caption = 'Take Photo';
+                Scope = Repeater;
+                Image = Camera;
+                Enabled = CanAddMaterial;
+                ToolTip = 'Takes a photo with the camera of your device and attaches it to the selected work order. Without a camera, you can upload an image file.';
+
+                trigger OnAction()
+                var
+                    PhotoMgt: Codeunit "DEF FS Photo Mgt";
+                begin
+                    PhotoMgt.TakePhoto(Rec);
+                    CurrPage.Update(false);
+                end;
+            }
             action(AddSparePart)
             {
                 ApplicationArea = All;
@@ -160,6 +177,9 @@ page 50102 "DEF FS Mobile Order List"
                 {
                 }
                 actionref(AddSparePartPromoted; AddSparePart)
+                {
+                }
+                actionref(TakePhotoPromoted; TakePhoto)
                 {
                 }
                 actionref(CompleteJobPromoted; CompleteJob)

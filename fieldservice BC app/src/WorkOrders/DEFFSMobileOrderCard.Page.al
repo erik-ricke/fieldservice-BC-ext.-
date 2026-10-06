@@ -1,5 +1,7 @@
 namespace DEF.FieldService.WorkOrders;
 
+using Microsoft.Foundation.Attachment;
+
 page 50103 "DEF FS Mobile Order Card"
 {
     Caption = 'Field Service Work Order';
@@ -69,12 +71,26 @@ page 50103 "DEF FS Mobile Order Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the note that was entered when the job was completed, failed or paused.';
                 }
+                field("No. of Photos"; Rec."No. of Photos")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies how many photos are attached to the work order. Open the Photos and Attachments factbox to view them.';
+                }
             }
             part(Lines; "DEF FS Line Subform")
             {
                 ApplicationArea = All;
                 Editable = false;
                 SubPageLink = "Document No." = field("No.");
+            }
+        }
+        area(FactBoxes)
+        {
+            part(Attachments; "Doc. Attachment List Factbox")
+            {
+                ApplicationArea = All;
+                Caption = 'Photos and Attachments';
+                SubPageLink = "Table ID" = const(50100), "No." = field("No.");
             }
         }
     }
@@ -141,6 +157,22 @@ page 50103 "DEF FS Mobile Order Card"
                     CurrPage.Update(false);
                 end;
             }
+            action(TakePhoto)
+            {
+                ApplicationArea = All;
+                Caption = 'Take Photo';
+                Image = Camera;
+                Enabled = CanAddMaterial;
+                ToolTip = 'Takes a photo with the camera of your device and attaches it to this work order. Without a camera, you can upload an image file.';
+
+                trigger OnAction()
+                var
+                    PhotoMgt: Codeunit "DEF FS Photo Mgt";
+                begin
+                    PhotoMgt.TakePhoto(Rec);
+                    CurrPage.Update(false);
+                end;
+            }
             action(CompleteJob)
             {
                 ApplicationArea = All;
@@ -182,6 +214,9 @@ page 50103 "DEF FS Mobile Order Card"
                 {
                 }
                 actionref(AddSparePartPromoted; AddSparePart)
+                {
+                }
+                actionref(TakePhotoPromoted; TakePhoto)
                 {
                 }
                 actionref(CompleteJobPromoted; CompleteJob)

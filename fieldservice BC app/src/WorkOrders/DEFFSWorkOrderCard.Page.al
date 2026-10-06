@@ -1,5 +1,7 @@
 namespace DEF.FieldService.WorkOrders;
 
+using Microsoft.Foundation.Attachment;
+
 /// <summary>
 /// Editable work order card for office staff. Technicians use "DEF FS Mobile Order Card".
 /// </summary>
@@ -120,12 +122,26 @@ page 50128 "DEF FS Work Order Card"
                     Editable = false;
                     ToolTip = 'Specifies how long the technician worked on the job, based on the status history. Paused time is not included.';
                 }
+                field("No. of Photos"; Rec."No. of Photos")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies how many photos are attached to the work order. Open the Photos and Attachments factbox to view them.';
+                }
             }
             part(Lines; "DEF FS Line Subform")
             {
                 ApplicationArea = All;
                 SubPageLink = "Document No." = field("No.");
                 UpdatePropagation = Both;
+            }
+        }
+        area(FactBoxes)
+        {
+            part(Attachments; "Doc. Attachment List Factbox")
+            {
+                ApplicationArea = All;
+                Caption = 'Photos and Attachments';
+                SubPageLink = "Table ID" = const(50100), "No." = field("No.");
             }
         }
     }

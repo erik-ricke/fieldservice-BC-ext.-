@@ -1,5 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
+using Microsoft.Foundation.Attachment;
 using Microsoft.Inventory.Item;
 using Microsoft.Projects.Resources.Resource;
 
@@ -17,6 +18,7 @@ permissionset 50111 "DEF FS MOBILE"
         tabledata "DEF FS Setup" = R,
         tabledata "DEF FS Mobile Cue" = RIM,
         tabledata "DEF FS Status Log Entry" = RI,
+        tabledata "Document Attachment" = RIMD,
         tabledata Item = R,
         tabledata Resource = R,
         table "DEF FS Work Order Header" = X,
@@ -36,5 +38,7 @@ permissionset 50111 "DEF FS MOBILE"
         codeunit "DEF FS Status Mgt" = X,
         codeunit "DEF FS Work Order Item Mgt" = X,
         codeunit "DEF FS Technician Mgt" = X,
-        codeunit "DEF FS Work Time Mgt" = X;
+        codeunit "DEF FS Work Time Mgt" = X,
+        codeunit "DEF FS Photo Mgt" = X,
+        codeunit "DEF FS Doc. Attachment Subs" = X;
 }
