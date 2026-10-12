@@ -3,7 +3,7 @@ namespace DEF.FieldService.WorkOrders;
 using Microsoft.Inventory.Item;
 using Microsoft.Projects.Resources.Resource;
 
-table 50105 "DEF FS Work Order Line"
+table 50201 "DEF FS Work Order Line"
 {
     Caption = 'Field Service Work Order Line';
     DataClassification = CustomerContent;

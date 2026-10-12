@@ -5,13 +5,13 @@ CodeCop rule AA0215 expects the **full object name without spaces or special cha
 
 | Object | File name |
 | :--- | :--- |
-| `table 50100 "DEF FS Work Order Header"` | `DEFFSWorkOrderHeader.Table.al` |
-| `page 50103 "DEF FS Mobile Order Card"` | `DEFFSMobileOrderCard.Page.al` |
-| `codeunit 50126 "DEF FS Status Mgt"` | `DEFFSStatusMgt.Codeunit.al` |
-| `enum 50101 "DEF FS Order Status"` | `DEFFSOrderStatus.Enum.al` |
-| `tableextension 50130 "DEF FS Item"` | `DEFFSItem.TableExt.al` |
-| `pageextension 50131 "DEF FS Item Card"` | `DEFFSItemCard.PageExt.al` |
-| `permissionset 50111 "DEF FS MOBILE"` | `DEFFSMOBILE.PermissionSet.al` |
+| `table 50200 "DEF FS Work Order Header"` | `DEFFSWorkOrderHeader.Table.al` |
+| `page 50201 "DEF FS Mobile Order Card"` | `DEFFSMobileOrderCard.Page.al` |
+| `codeunit 50204 "DEF FS Status Mgt"` | `DEFFSStatusMgt.Codeunit.al` |
+| `enum 50200 "DEF FS Order Status"` | `DEFFSOrderStatus.Enum.al` |
+| `tableextension 50200 "DEF FS Item"` | `DEFFSItem.TableExt.al` |
+| `pageextension 50200 "DEF FS Item Card"` | `DEFFSItemCard.PageExt.al` |
+| `permissionset 50200 "DEF FS MOBILE"` | `DEFFSMOBILE.PermissionSet.al` |
 
 ## 2. Mandatory Properties
 - **ApplicationArea:** Set `ApplicationArea = All;` on every visible page field, part and action, even when the page also sets it. `#All` is not valid AL syntax.

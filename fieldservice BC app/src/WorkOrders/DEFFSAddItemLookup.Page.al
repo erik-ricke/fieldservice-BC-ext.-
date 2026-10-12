@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Inventory.Item;
 
-page 50117 "DEF FS Add Item Lookup"
+page 50206 "DEF FS Add Item Lookup"
 {
     Caption = 'Select Item';
     PageType = List;

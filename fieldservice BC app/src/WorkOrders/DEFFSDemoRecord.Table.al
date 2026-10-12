@@ -4,7 +4,7 @@ namespace DEF.FieldService.WorkOrders;
 /// Remembers which standard records (items, resources) were created by the demo data tool,
 /// so that only those records are removed again.
 /// </summary>
-table 50124 "DEF FS Demo Record"
+table 50205 "DEF FS Demo Record"
 {
     Caption = 'Field Service Demo Record';
     DataClassification = SystemMetadata;

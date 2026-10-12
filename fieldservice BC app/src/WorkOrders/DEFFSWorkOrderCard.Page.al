@@ -5,7 +5,7 @@ using Microsoft.Foundation.Attachment;
 /// <summary>
 /// Editable work order card for office staff. Technicians use "DEF FS Mobile Order Card".
 /// </summary>
-page 50128 "DEF FS Work Order Card"
+page 50212 "DEF FS Work Order Card"
 {
     Caption = 'Field Service Work Order';
     PageType = Document;
@@ -141,7 +141,7 @@ page 50128 "DEF FS Work Order Card"
             {
                 ApplicationArea = All;
                 Caption = 'Photos and Attachments';
-                SubPageLink = "Table ID" = const(50100), "No." = field("No.");
+                SubPageLink = "Table ID" = const(50200), "No." = field("No.");
             }
         }
     }

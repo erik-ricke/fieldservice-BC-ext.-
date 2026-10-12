@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-table 50107 "DEF FS Mobile Cue"
+table 50202 "DEF FS Mobile Cue"
 {
     Caption = 'Field Service Activities';
     DataClassification = CustomerContent;

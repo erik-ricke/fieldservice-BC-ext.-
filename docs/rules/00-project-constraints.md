@@ -7,11 +7,11 @@ These rules keep the app ready for AppSource from day one. Rework after the fact
 * **Rule:** Every object name starts with the affix followed by a space and the feature short name, e.g. `DEF FS Work Order Header`.
 * **Also prefix:** fields added in table extensions, controls and actions added in page extensions, enum values added in enum extensions, permission sets and profiles.
 * **Enforcement:** `AppSourceCop.json` contains `"mandatoryAffixes": ["DEF"]`, so a missing affix is a build error.
-* ✅ `codeunit 50116 "DEF FS Work Order Item Mgt"`
-* ❌ `codeunit 50116 "Work Order Item Mgt"`, ❌ `"DEF_FS Work Order Item Mgt"`
+* ✅ `codeunit 50203 "DEF FS Work Order Item Mgt"`
+* ❌ `codeunit 50203 "Work Order Item Mgt"`, ❌ `"DEF_FS Work Order Item Mgt"`
 
 ## 2. Object IDs
-* **Main app:** `50100` to `50189` (as in `app.json`).
+* **Main app:** `50200` to `50220` (as in `app.json`).
 * **Test app:** `50190` to `50200`.
 * Per-tenant extensions must stay in `50000..99999`. An AppSource app needs its own range from Microsoft (1,000,000+), which means renumbering before submission.
 * Before creating an object, check the existing files so the ID is not taken in either app.

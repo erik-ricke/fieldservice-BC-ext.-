@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-table 50112 "DEF FS Demo Setup"
+table 50203 "DEF FS Demo Setup"
 {
     Caption = 'Field Service Demo Setup';
     DataClassification = CustomerContent;

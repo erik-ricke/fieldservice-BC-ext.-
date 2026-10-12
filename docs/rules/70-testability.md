@@ -26,7 +26,7 @@ All code must be designed to be easily testable by unit tests.
 ### ✅ Testable Code
 ```al
 // Good: Dependencies passed as parameters
-codeunit 50100 "DEF Sales Calculator"
+codeunit 50200 "DEF Sales Calculator"
 {
     procedure CalculateDiscount(SalesAmount: Decimal; CustomerType: Enum "DEF Customer Type"): Decimal
     var
@@ -48,7 +48,7 @@ codeunit 50100 "DEF Sales Calculator"
 ### ❌ Hard to Test
 ```al
 // Bad: Hard-coded dependencies and complex logic
-codeunit 50100 "DEF Sales Manager"
+codeunit 50200 "DEF Sales Manager"
 {
     procedure ProcessOrder(OrderNo: Code[20])
     var
@@ -90,7 +90,7 @@ interface "DEF IDiscount Calculator"
 }
 
 // Implementation can be mocked in tests
-codeunit 50100 "DEF Standard Discount" implements "DEF IDiscount Calculator"
+codeunit 50200 "DEF Standard Discount" implements "DEF IDiscount Calculator"
 {
     procedure CalculateDiscount(Amount: Decimal): Decimal
     begin
@@ -102,7 +102,7 @@ codeunit 50100 "DEF Standard Discount" implements "DEF IDiscount Calculator"
 ### Extract Business Logic
 ```al
 // Separate data access from logic
-codeunit 50101 "DEF Sales Logic"
+codeunit 50201 "DEF Sales Logic"
 {
     // Pure logic - easy to test
     procedure IsEligibleForDiscount(CustomerType: Text; OrderAmount: Decimal): Boolean

@@ -6,7 +6,7 @@ Tables that hold exactly one record (setup, cues) follow the singleton pattern. 
 ## Implementation
 
 ```al
-table 50122 "DEF FS Setup"
+table 50204 "DEF FS Setup"
 {
     Caption = 'Field Service Setup';
     DataClassification = CustomerContent;

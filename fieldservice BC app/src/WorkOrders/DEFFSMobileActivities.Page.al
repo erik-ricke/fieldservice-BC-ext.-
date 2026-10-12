@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50108 "DEF FS Mobile Activities"
+page 50203 "DEF FS Mobile Activities"
 {
     Caption = 'Activities';
     PageType = CardPart;

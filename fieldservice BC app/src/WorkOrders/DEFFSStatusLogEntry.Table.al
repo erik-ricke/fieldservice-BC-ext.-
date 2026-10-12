@@ -5,7 +5,7 @@ using Microsoft.Projects.Resources.Resource;
 /// <summary>
 /// One row per status change of a work order. Used to show the history and to calculate travel and work time.
 /// </summary>
-table 50133 "DEF FS Status Log Entry"
+table 50206 "DEF FS Status Log Entry"
 {
     Caption = 'Field Service Status Log Entry';
     DataClassification = CustomerContent;

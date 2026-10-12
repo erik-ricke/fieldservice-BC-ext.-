@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-enum 50104 "DEF FS Line Type"
+enum 50201 "DEF FS Line Type"
 {
     Caption = 'Field Service Line Type';
     Extensible = true;

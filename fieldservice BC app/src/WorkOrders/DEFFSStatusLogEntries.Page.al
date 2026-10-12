@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50134 "DEF FS Status Log Entries"
+page 50213 "DEF FS Status Log Entries"
 {
     Caption = 'Work Order Status History';
     PageType = List;

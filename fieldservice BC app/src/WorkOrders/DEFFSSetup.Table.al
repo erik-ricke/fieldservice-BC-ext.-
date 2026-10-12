@@ -3,7 +3,7 @@ namespace DEF.FieldService.WorkOrders;
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Inventory.Item;
 
-table 50122 "DEF FS Setup"
+table 50204 "DEF FS Setup"
 {
     Caption = 'Field Service Setup';
     DataClassification = CustomerContent;

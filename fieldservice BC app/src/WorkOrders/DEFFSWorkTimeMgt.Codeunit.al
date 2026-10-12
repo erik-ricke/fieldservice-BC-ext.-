@@ -3,7 +3,7 @@ namespace DEF.FieldService.WorkOrders;
 /// <summary>
 /// Calculates how long a technician traveled to and worked on a work order, based on its status history.
 /// </summary>
-codeunit 50135 "DEF FS Work Time Mgt"
+codeunit 50207 "DEF FS Work Time Mgt"
 {
     /// <summary>
     /// Adds up the time the work order spent in status Traveling and In Progress.

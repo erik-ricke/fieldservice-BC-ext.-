@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Projects.Resources.Resource;
 
-pageextension 50131 "DEF FS Resource Card" extends "Resource Card"
+pageextension 50200 "DEF FS Resource Card" extends "Resource Card"
 {
     layout
     {

@@ -6,7 +6,7 @@ using System.Device;
 /// <summary>
 /// Adds photos to work orders. Photos are stored as standard document attachments of the work order.
 /// </summary>
-codeunit 50136 "DEF FS Photo Mgt"
+codeunit 50208 "DEF FS Photo Mgt"
 {
     var
         WorkOrderClosedErr: Label 'You cannot add photos to work order %1 because its status is %2.', Comment = '%1 = work order number, %2 = status';

@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-enum 50125 "DEF FS Completion Result"
+enum 50202 "DEF FS Completion Result"
 {
     Caption = 'Field Service Completion Result';
     Extensible = false;

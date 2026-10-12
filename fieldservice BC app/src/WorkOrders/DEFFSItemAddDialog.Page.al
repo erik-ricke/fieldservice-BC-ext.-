@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Inventory.Item;
 
-page 50120 "DEF FS Item Add Dialog"
+page 50209 "DEF FS Item Add Dialog"
 {
     PageType = StandardDialog;
     Caption = 'Add Material';

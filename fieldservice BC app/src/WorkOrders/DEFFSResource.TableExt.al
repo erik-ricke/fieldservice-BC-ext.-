@@ -6,11 +6,11 @@ using System.Security.AccessControl;
 /// <summary>
 /// Links a resource to the Business Central user who works as this field service technician.
 /// </summary>
-tableextension 50130 "DEF FS Resource" extends Resource
+tableextension 50200 "DEF FS Resource" extends Resource
 {
     fields
     {
-        field(50130; "DEF FS User ID"; Code[50])
+        field(50200; "DEF FS User ID"; Code[50])
         {
             Caption = 'Field Service User ID';
             DataClassification = EndUserIdentifiableInformation;

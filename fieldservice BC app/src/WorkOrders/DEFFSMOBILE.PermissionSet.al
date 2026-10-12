@@ -7,7 +7,7 @@ using Microsoft.Projects.Resources.Resource;
 /// <summary>
 /// Technicians: work through their orders and record material.
 /// </summary>
-permissionset 50111 "DEF FS MOBILE"
+permissionset 50200 "DEF FS MOBILE"
 {
     Assignable = true;
     Caption = 'Field Service Mobile';

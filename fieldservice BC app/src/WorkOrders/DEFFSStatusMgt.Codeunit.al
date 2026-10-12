@@ -3,7 +3,7 @@ namespace DEF.FieldService.WorkOrders;
 /// <summary>
 /// Owns all status changes of field service work orders, including which transitions are allowed.
 /// </summary>
-codeunit 50126 "DEF FS Status Mgt"
+codeunit 50204 "DEF FS Status Mgt"
 {
     var
         TransitionNotAllowedErr: Label 'Work order %1 cannot change from status %2 to status %3.', Comment = '%1 = work order number, %2 = current status, %3 = requested status';

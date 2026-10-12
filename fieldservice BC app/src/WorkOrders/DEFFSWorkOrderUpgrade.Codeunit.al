@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using System.Upgrade;
 
-codeunit 50114 "DEF FS Work Order Upgrade"
+codeunit 50201 "DEF FS Work Order Upgrade"
 {
     Subtype = Upgrade;
 

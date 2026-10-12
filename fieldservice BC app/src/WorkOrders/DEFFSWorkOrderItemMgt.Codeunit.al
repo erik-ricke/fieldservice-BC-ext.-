@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Inventory.Item;
 
-codeunit 50116 "DEF FS Work Order Item Mgt"
+codeunit 50203 "DEF FS Work Order Item Mgt"
 {
     var
         QuantityMustBePositiveErr: Label 'The quantity must be greater than 0.';

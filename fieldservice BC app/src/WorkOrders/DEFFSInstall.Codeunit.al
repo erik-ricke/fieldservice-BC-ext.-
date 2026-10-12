@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-codeunit 50110 "DEF FS Install"
+codeunit 50200 "DEF FS Install"
 {
     Subtype = Install;
 

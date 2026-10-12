@@ -2,7 +2,7 @@ namespace DEF.FieldService.WorkOrders;
 
 using Microsoft.Foundation.Attachment;
 
-page 50103 "DEF FS Mobile Order Card"
+page 50201 "DEF FS Mobile Order Card"
 {
     Caption = 'Field Service Work Order';
     PageType = Document;
@@ -90,7 +90,7 @@ page 50103 "DEF FS Mobile Order Card"
             {
                 ApplicationArea = All;
                 Caption = 'Photos and Attachments';
-                SubPageLink = "Table ID" = const(50100), "No." = field("No.");
+                SubPageLink = "Table ID" = const(50200), "No." = field("No.");
             }
         }
     }

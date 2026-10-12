@@ -10,7 +10,7 @@ using Microsoft.Sales.Customer;
 /// <summary>
 /// Office staff and administrators: create and plan work orders, maintain setup and demo data.
 /// </summary>
-permissionset 50129 "DEF FS ADMIN"
+permissionset 50201 "DEF FS ADMIN"
 {
     Assignable = true;
     Caption = 'Field Service Admin';

@@ -9,7 +9,7 @@ using Microsoft.Projects.Resources.Resource;
 /// Creates and removes demo work orders. The default demo rows live in the resource file DemoData.json, not in code.
 /// Everything this codeunit creates is flagged, so deleting demo data never touches real records.
 /// </summary>
-codeunit 50115 "DEF FS Demo Data Mgt"
+codeunit 50202 "DEF FS Demo Data Mgt"
 {
     var
         DemoDataResourceTok: Label 'DemoData.json', Locked = true;

@@ -5,7 +5,7 @@ using Microsoft.Projects.Resources.Resource;
 /// <summary>
 /// Knows which resource a user works as and limits work orders to the ones assigned to that technician.
 /// </summary>
-codeunit 50132 "DEF FS Technician Mgt"
+codeunit 50206 "DEF FS Technician Mgt"
 {
     var
         UserAlreadyLinkedErr: Label 'User %1 is already linked to resource %2. A user can only work as one technician.', Comment = '%1 = user name, %2 = resource number';

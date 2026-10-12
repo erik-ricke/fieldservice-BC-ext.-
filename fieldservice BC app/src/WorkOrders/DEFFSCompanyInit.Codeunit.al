@@ -6,7 +6,7 @@ using Microsoft.Foundation.NoSeries;
 /// <summary>
 /// Creates the configuration a company needs to use Field Service. Safe to run more than once.
 /// </summary>
-codeunit 50127 "DEF FS Company Init"
+codeunit 50205 "DEF FS Company Init"
 {
     var
         WorkOrderNoSeriesTok: Label 'FS-WO', Locked = true;

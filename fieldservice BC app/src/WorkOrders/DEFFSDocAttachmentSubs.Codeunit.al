@@ -5,7 +5,7 @@ using Microsoft.Foundation.Attachment;
 /// <summary>
 /// Makes the standard document attachments (factbox, upload, preview) work for field service work orders.
 /// </summary>
-codeunit 50137 "DEF FS Doc. Attachment Subs"
+codeunit 50209 "DEF FS Doc. Attachment Subs"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Document Attachment Mgmt", OnAfterTableHasNumberFieldPrimaryKey, '', false, false)]
     local procedure HandleOnAfterTableHasNumberFieldPrimaryKey(TableNo: Integer; var Result: Boolean; var FieldNo: Integer)

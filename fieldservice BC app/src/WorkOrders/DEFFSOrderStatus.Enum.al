@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-enum 50101 "DEF FS Order Status"
+enum 50200 "DEF FS Order Status"
 {
     Caption = 'Field Service Order Status';
     Extensible = true;

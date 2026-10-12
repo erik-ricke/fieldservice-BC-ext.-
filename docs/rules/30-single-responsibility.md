@@ -26,15 +26,15 @@ Follow the Single Responsibility Principle: Each object should have one, and onl
 ### ✅ Correct
 ```al
 // Separate responsibilities
-codeunit 50100 "DEF Sales Validation"      // Only validation
-codeunit 50101 "DEF Sales Calculation"     // Only calculations
-codeunit 50102 "DEF Sales Posting"         // Only posting logic
+codeunit 50200 "DEF Sales Validation"      // Only validation
+codeunit 50201 "DEF Sales Calculation"     // Only calculations
+codeunit 50202 "DEF Sales Posting"         // Only posting logic
 ```
 
 ### ❌ Incorrect
 ```al
 // Multiple responsibilities in one codeunit
-codeunit 50100 "DEF Sales Manager"
+codeunit 50200 "DEF Sales Manager"
 {
     // Validation, calculation, and posting all mixed together
     procedure ValidateOrder() { }

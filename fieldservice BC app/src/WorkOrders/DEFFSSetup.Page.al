@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50123 "DEF FS Setup"
+page 50211 "DEF FS Setup"
 {
     Caption = 'Field Service Setup';
     PageType = Card;

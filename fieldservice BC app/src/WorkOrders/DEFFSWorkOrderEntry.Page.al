@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50118 "DEF FS Work Order Entry"
+page 50207 "DEF FS Work Order Entry"
 {
     Caption = 'Field Service Work Orders';
     PageType = List;

@@ -12,15 +12,15 @@ Object names must not be longer than **30 characters, including the affix and th
 
 ### ✅ Correct
 ```al
-table 50100 "DEF FS Work Order Header"      // 24 characters
-page 50119 "DEF FS Job Completion Dialog"   // 28 characters
-codeunit 50116 "DEF FS Work Order Item Mgt" // 26 characters
+table 50200 "DEF FS Work Order Header"      // 24 characters
+page 50208 "DEF FS Job Completion Dialog"   // 28 characters
+codeunit 50203 "DEF FS Work Order Item Mgt" // 26 characters
 ```
 
 ### ❌ Incorrect
 ```al
-table 50100 "DEF FS Work Order Header Configuration"   // 38 characters
-page 50101 "DEF FS Customer Master Data Management"    // 38 characters
+table 50200 "DEF FS Work Order Header Configuration"   // 38 characters
+page 50201 "DEF FS Customer Master Data Management"    // 38 characters
 ```
 
 ## Best Practices

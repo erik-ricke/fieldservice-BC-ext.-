@@ -5,7 +5,7 @@ using Microsoft.Foundation.NoSeries;
 using Microsoft.Projects.Resources.Resource;
 using Microsoft.Sales.Customer;
 
-table 50100 "DEF FS Work Order Header"
+table 50200 "DEF FS Work Order Header"
 {
     Caption = 'Field Service Work Order';
     DataClassification = CustomerContent;
@@ -136,7 +136,7 @@ table 50100 "DEF FS Work Order Header"
         {
             Caption = 'No. of Photos';
             FieldClass = FlowField;
-            CalcFormula = count("Document Attachment" where("Table ID" = const(50100),
+            CalcFormula = count("Document Attachment" where("Table ID" = const(50200),
                                                              "No." = field("No."),
                                                              "File Type" = const(Image)));
             Editable = false;

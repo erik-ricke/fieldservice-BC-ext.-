@@ -1,6 +1,6 @@
 namespace DEF.FieldService.WorkOrders;
 
-page 50113 "DEF FS Demo Setup"
+page 50205 "DEF FS Demo Setup"
 {
     Caption = 'Field Service Demo Setup';
     PageType = List;
